@@ -1,0 +1,22 @@
+Student: Kanan Ahmadov
+Class: CSE 438 - Mobile Application Development
+Assignment: Lab #2 (Virtual Pet App)- Creative Feature Explanation
+
+1. What I implemented:
+
+For my creative feature, I developed a Pet Mood Tracker that dynamically reflects the pet's emotional state based on its happiness and food levels. The pet’s mood can be "Happy," "Neutral," or "Sad," and it updates in real-time as the user interacts with the pet through playing or feeding. To enhance user experience, I added an animation to the Mood Label, providing visual feedback whenever the pet’s mood changes. Additionally, I implemented a Reward System: if the pet stays "Happy" for 5 consecutive interactions, the user earns a bonus happiness point, with a reward message displayed using a UIAlertController.
+
+
+2. How I implemented it:
+
+In the Pet class, I created a computed property called mood, which determines the pet’s emotional state based on its happiness and food levels. If the pet’s happiness exceeds 7 and its food level is above 5, the pet is considered "Happy." Otherwise, the pet transitions to "Neutral" or "Sad" depending on lower values. I also added a consecutiveHappyInteractions counter to track how long the pet remains in the "Happy" state. After 5 consecutive happy interactions, the user is rewarded with a bonus happiness point. In the ViewController.swift file, I implemented mood animation using UIView.animate to make the Mood Label pulse when the pet’s mood changes, ensuring the user immediately notices the update. Additionally, I used UIAlertController to display a message and reward the user with an extra happiness point when the pet stays happy for 5 interactions.
+
+For the UIView.animate, the following links helped me: https://dev.to/midhetfatema94/uiview-animations-in-swift-5cnj, https://www.devgem.io/posts/understanding-cgaffinetransform-in-swift
+
+For the UIAlertController, the following link helped me: https://developer.apple.com/documentation/uikit/uialertcontroller
+
+
+3. Why I implemented it:
+
+The primary goal of this feature was to increase user engagement by providing more interactive feedback and adding depth to the app’s gameplay. The animated Mood Label offers immediate feedback whenever the pet’s mood changes, making the app feel more responsive and lively. By adding a mood-based reward system, I introduced an extra layer of challenge, motivating users to maintain their pet’s happiness over time. These features make the app more engaging and enjoyable!
+
