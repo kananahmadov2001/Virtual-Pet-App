@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var foodLevelLabel: UILabel!
     @IBOutlet weak var timesFedLabel: UILabel!
     @IBOutlet weak var foodDisplayView: DisplayView!
+
+    @IBOutlet weak var moodLabel: UILabel!
     
     // pet Dictionary
     var pets: [String: Pet] = [:]
@@ -33,7 +35,7 @@ class ViewController: UIViewController {
         pets["Bunny"] = Pet(name: "Bunny", image: "bunny", happiness: 0, foodLevel: 0)
         pets["Fish"] = Pet(name: "Fish", image: "fish", happiness: 0, foodLevel: 0)
 
-        // setting default pet (Cat)
+        // setting default pet (Dog)
         selectPet(named: "Dog")
     }
    
@@ -46,10 +48,51 @@ class ViewController: UIViewController {
         foodLevelLabel.text = "Food Level:"
         timesPlayedLabel.text = "Played: \(pet.timesPlayed)"
         timesFedLabel.text = "Fed: \(pet.timesFed)"
-
+        
+        // updating the pet's mood and animating the label if mood changes
+        let newMood = pet.mood
+        moodLabel.text = "Mood: \(newMood)"
+        animateMoodChange(for: newMood)
+        
+        // checking for rewards if pt has been happy for 5 consecutive interactions
+        if pet.consecutiveHappyInteractions >= 5 {
+            showRewardMessage()
+        }
+        
         // updating display views with the progress (as a fraction of 10)
         happinessDisplayView.animateValue(to: CGFloat(pet.happiness) / CGFloat(10))
         foodDisplayView.animateValue(to: CGFloat(pet.foodLevel) / CGFloat(10))
+    }
+    
+    // animating the mood label when mood changes
+    
+    /*
+     For the UIView.animate, the following links helped me: https://dev.to/midhetfatema94/uiview-animations-in-swift-5cnj https://www.devgem.io/posts/understanding-cgaffinetransform-in-swift
+     */
+    
+    func animateMoodChange(for mood: String) {
+        // first, enlarging the moodLabel by scaling it up 1.5 times
+        UIView.animate(withDuration: 0.5, animations: {
+            self.moodLabel.transform = CGAffineTransform(scaleX: 1.5, y: 1.5)
+        }) { animationComplete in
+            // once the animatio finishes, returning the moodLabel to its original size
+            UIView.animate(withDuration: 0.5){
+                self.moodLabel.transform = CGAffineTransform.identity
+            }
+        }
+    }
+    
+    // displaying a reward message if pet has been happy for a long time
+    
+    /*
+     For the UIAlertController, the following link helped me: https://developer.apple.com/documentation/uikit/uialertcontroller
+     */
+    
+    func showRewardMessage() {
+        let alert = UIAlertController(title: "Reward!", message: "Pet has been happy for the last 5 interactions! Here is your bonus happiness point", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Good Job!", style: .default))
+        present(alert, animated: true, completion: nil)
+        currentPet?.happiness += 1 // bonus happiness point
     }
     
     func setColors(for petName: String) {
