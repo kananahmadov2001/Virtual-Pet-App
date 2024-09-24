@@ -30,12 +30,10 @@ The Virtual Pet App allows users to interact with a virtual pet by playing with 
     <img width="70%" src="https://github.com/user-attachments/assets/46c14226-996b-432a-9c9f-91cb79acf6f3">
 </p>
 
+
 ## Live Action
 If you would like to see the live action of the app, checkout the following video: screen-record.mov
 
-<p align="center" width="100%">
-    <img width="50%" src="https://github.com/user-attachments/files/17109496/screen-record.gif.zip">
-</p>
 
 ## Installation
 1) Clone this repository:
