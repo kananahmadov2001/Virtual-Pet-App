@@ -5,7 +5,7 @@
 The Virtual Pet App allows users to interact with a virtual pet by playing with it and feeding it. Users can choose from a variety of pets—Cat, Dog, Bird, Bunny, and Fish—and keep track of each pet’s happiness and food levels. The app features dynamic UI updates, progress bars for happiness and food levels, and a fun Pet Mood Tracker that enhances user engagement.
 
 <p align="center" width="100%">
-    <img width="25%" src="https://github.com/user-attachments/assets/c79c658b-5959-40bb-af9f-c008a212f85a">
+    <img width="25%" src="https://github.com/user-attachments/assets/c79c658b-5959-40bb-af9f-c008a212f85a"> <br>
     <img width="70%" src="https://github.com/user-attachments/assets/46c14226-996b-432a-9c9f-91cb79acf6f3">
 </p>
 
