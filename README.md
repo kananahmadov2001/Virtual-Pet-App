@@ -4,6 +4,10 @@
 
 The Virtual Pet App allows users to interact with a virtual pet by playing with it and feeding it. Users can choose from a variety of pets—Cat, Dog, Bird, Bunny, and Fish—and keep track of each pet’s happiness and food levels. The app features dynamic UI updates, progress bars for happiness and food levels, and a fun Pet Mood Tracker that enhances user engagement.
 
+<p align="center" width="100%">
+    <img width="50%" src="https://github.com/user-attachments/assets/c79c658b-5959-40bb-af9f-c008a212f85a">
+    <img width="70%" src="https://github.com/user-attachments/assets/46c14226-996b-432a-9c9f-91cb79acf6f3">
+</p>
 
 ## Technologies Used
 * Swift: The app is developed in Swift, following the Model-View-Controller (MVC) architecture.
@@ -25,13 +29,6 @@ The Virtual Pet App allows users to interact with a virtual pet by playing with 
 * Playing with the Pet: The pet’s happiness increases when played with, but only if its food level is above 0. If the pet is happy, it receives a bonus happiness boost when played with.
 * Feeding the Pet: The pet’s food level increases when fed, as long as the food level is below 10. Keeping the pet well-fed ensures it can continue playing and remain happy.
 * Pet Mood Tracker: The pet’s mood changes dynamically based on its happiness and food levels. A happy pet remains happy as long as its happiness is above 7 and its food level is above 5. If the pet remains happy for 5 interactions, the user is rewarded.
-
-
-## Screenshots
-<p align="center" width="100%">
-    <img width="50%" src="https://github.com/user-attachments/assets/c79c658b-5959-40bb-af9f-c008a212f85a">
-    <img width="70%" src="https://github.com/user-attachments/assets/46c14226-996b-432a-9c9f-91cb79acf6f3">
-</p>
 
 
 ## Live Action
