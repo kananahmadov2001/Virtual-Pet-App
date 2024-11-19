@@ -11,7 +11,7 @@ The Virtual-Pet App is an interactive mobile application that allows users to se
 
 <div align="center">
     <img src="Vertical-View.png" alt="screenshot" height="600px">
-    <img src="Horizontal-View.png" alt="screenshot">
+    <img src="Horizontal-View.png" alt="screenshot" height="600px">
 </div>
 
 ## Technologies/Frameworks Used
