@@ -9,9 +9,10 @@ Note: I developed this project as my **Lab 2** assignment for my Mobile App. Dev
 
 The Virtual-Pet App is an interactive mobile application that allows users to select and care for virtual pets. This project was designed to practice mobile app development with Swift and explore concepts such as dynamic UI updates, state management, and animation in iOS applications. The app provides a fun and engaging user experience through visual feedback and rewards.
 
-<p align="center" width="100%">
-    <img width="50%" src="https://via.placeholder.com/400x600" alt="Virtual-Pet App Screenshot">
-</p>
+<div align="center">
+    <img src="Vertical-View.png" alt="screenshot" width="400px" height="300px">
+    <img src="Horizontal-View.png" alt="screenshot" width="400px" height="300px">
+</div>
 
 ## Technologies/Frameworks Used
 - **Language**: Swift
